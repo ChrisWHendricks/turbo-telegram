@@ -13,8 +13,7 @@ author:
 
 # Build settings
 markdown: kramdown
-#theme: jekyll-theme-minimal
-remote_theme: pages-themes/minimal
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
