@@ -1,0 +1,67 @@
+title: Engineering Blog
+description: >-
+  A technical blog focused on engineering best practices, architecture decisions,
+  and lessons learned from building software at scale.
+
+baseurl: ""
+url: "https://yourusername.github.io"
+
+# Author information
+author:
+  name: Your Name
+  email: your.email@company.com
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Post settings
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+# Collections
+collections:
+  authors:
+    output: true
+    permalink: /authors/:name/
+
+# Default layouts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "default"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Social links (optional)
+github_username: yourusername
+twitter_username: yourtwitter
+
+# Site navigation
+header_pages:
+  - about.md
+  - archive.md
